@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<link rel="stylesheet" type="text/css" href="style.css"></link>
+		</head>
+		<body onload="carga()">
+			<a type="button" href="#" id="botoncito">TOUCH</a>
+			<p id="demo"></p>
+			<h1 id="mouse" onmouseover="mouseDentro()" onmouseout="mouseFuera()">Haz click en el boton</h1>
+
+			<script>
+				document.getElementById("botoncito").addEventListener("click", function(){
+   				document.getElementById("demo").innerHTML = "Hola Mundo!";
+				});
+			</script>
+			<script src="main.js"></script>
+		</body>
+	</html>
